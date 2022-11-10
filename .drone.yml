@@ -1,0 +1,12 @@
+kind: pipeline
+name: default
+type: docker
+
+steps:
+  - name: build-api-php
+    image: docker:latest
+    commands:
+      - echo "Hello World"
+    volumes:
+      - name: docker_socket
+        path: /var/run/docker.sock
