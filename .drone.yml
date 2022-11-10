@@ -3,7 +3,7 @@ name: default
 type: docker
 
 steps:
-  - name: build-api-php
+  - name: hello-world
     image: docker:latest
     commands:
       - echo "Hello World"
